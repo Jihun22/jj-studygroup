@@ -12,14 +12,8 @@ import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import java.util.Locale;
 
 @Configuration
-public class MessageConfig implements WebMvcConfigurer {
+public class MessageConfig implements WebMvcConfigurer{
 
-    /**
-     *  사용자 언어 환경 설정 (ko, en)
-     *  Default - Korea
-     *
-     *  message_ko
-     */
     @Bean
     public LocaleResolver localeResolver(){
         CookieLocaleResolver resolver = new CookieLocaleResolver();
